@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+<button id="btnSave" type="submit">
+    保存
+
+</button>
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSave").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "@Url.Action("Add", "CAdviceFeedback", new { area = "" })",
+                    success: function (data) {
+                        alert(data.pkId);
+                    },
+                    error: function () {
+
+
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}

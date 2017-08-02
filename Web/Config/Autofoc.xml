@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac name="autofac">
+  <controller type="HFCMS.Web,HFCMS" service="HFCMS.Web" /> 
+  <components>
+    <component type="HFCMS.Service,HFCMS" service="HFCMS.Service"/>
+    <component type="HFCMS.Repository,HFCMS" service="HFCMS.Repository"/>
+    <component type="HFCMS.Entity,HFCMS" service="HFCMS.Entity"/>
+    <component type="HFCMS.Dao,HFCMS" service="HFCMS.Dao"/>
+  </components>
+  
+</autofac>
